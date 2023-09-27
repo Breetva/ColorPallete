@@ -25,7 +25,7 @@
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <integer key="value" value="50"/>
+                                        <integer key="value" value="25"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
@@ -50,6 +50,9 @@
                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="3j3-7k-Qmr">
                                                 <rect key="frame" x="87" y="0.0" width="258" height="31"/>
                                                 <color key="tintColor" systemColor="systemRedColor"/>
+                                                <connections>
+                                                    <action selector="sliderAction" destination="BYZ-38-t0r" eventType="valueChanged" id="23A-jN-otb"/>
+                                                </connections>
                                             </slider>
                                         </subviews>
                                         <constraints>
@@ -74,6 +77,9 @@
                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="ugy-wm-rj9">
                                                 <rect key="frame" x="86.5" y="0.0" width="258.5" height="31"/>
                                                 <color key="tintColor" systemColor="systemGreenColor"/>
+                                                <connections>
+                                                    <action selector="sliderAction" destination="BYZ-38-t0r" eventType="valueChanged" id="GVo-uU-vo2"/>
+                                                </connections>
                                             </slider>
                                         </subviews>
                                         <constraints>
@@ -98,6 +104,9 @@
                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="eDG-BV-yCU">
                                                 <rect key="frame" x="86.5" y="0.0" width="258.5" height="31"/>
                                                 <color key="tintColor" systemColor="systemBlueColor"/>
+                                                <connections>
+                                                    <action selector="sliderAction" destination="BYZ-38-t0r" eventType="valueChanged" id="Dmw-Dg-uLQ"/>
+                                                </connections>
                                             </slider>
                                         </subviews>
                                         <constraints>
@@ -119,6 +128,15 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="UwQ-mH-6PL" secondAttribute="trailing" constant="16" id="pZm-wW-81d"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="blueLabel" destination="Cws-II-MEA" id="nQZ-dQ-RhY"/>
+                        <outlet property="blueSlider" destination="eDG-BV-yCU" id="Ud1-Gk-HPv"/>
+                        <outlet property="colorView" destination="UwQ-mH-6PL" id="yAM-s5-3rs"/>
+                        <outlet property="greenLabel" destination="P7v-fN-CJA" id="yXa-SY-h5k"/>
+                        <outlet property="greenSlider" destination="ugy-wm-rj9" id="a5c-KL-Zvl"/>
+                        <outlet property="redLablel" destination="gl1-8b-wZg" id="xP4-L5-aS6"/>
+                        <outlet property="redSlider" destination="3j3-7k-Qmr" id="4xX-uN-Out"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -130,13 +148,13 @@
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemBlueColor">
-            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGreenColor">
-            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemRedColor">
-            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
